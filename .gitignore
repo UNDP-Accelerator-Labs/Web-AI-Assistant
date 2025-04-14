@@ -2,3 +2,4 @@
 dep.*
 __pycache__/
 .env/
+outputs/
