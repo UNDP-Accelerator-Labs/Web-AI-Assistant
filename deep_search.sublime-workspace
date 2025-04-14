@@ -1,0 +1,868 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"own",
+				"owner_locations"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"pad",
+				"padIds"
+			],
+			[
+				"pa",
+				"padIds"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"box-s",
+				"box-sizing"
+			],
+			[
+				"se",
+				"section"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"radi",
+				"radianToDegree"
+			],
+			[
+				"sess",
+				"session"
+			],
+			[
+				"auth",
+				"authorList"
+			],
+			[
+				"ah",
+				"authorList"
+			],
+			[
+				"see",
+				"session_title"
+			],
+			[
+				"get",
+				"getAuthorInfo"
+			],
+			[
+				"find",
+				"find_element"
+			],
+			[
+				"sele",
+				"selector"
+			],
+			[
+				"sha",
+				"shadowRoot"
+			],
+			[
+				"pap",
+				"paper_link"
+			],
+			[
+				"clo",
+				"closeTab"
+			],
+			[
+				"session",
+				"session_title"
+			],
+			[
+				"l",
+				"location"
+			],
+			[
+				"loc",
+				"location"
+			],
+			[
+				"loca",
+				"locationData"
+			],
+			[
+				"coun",
+				"countryNames"
+			],
+			[
+				"col-spa",
+				"col-span-4"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"tran",
+				"transform-origin"
+			],
+			[
+				"b",
+				"BoardsButton"
+			],
+			[
+				"bo",
+				"BoardsButton"
+			],
+			[
+				"pla",
+				"platformPads"
+			],
+			[
+				"plat",
+				"platform"
+			],
+			[
+				"col-",
+				"col-span-2"
+			],
+			[
+				"gri",
+				"grid-cols-3"
+			],
+			[
+				"col-sp",
+				"col-span-9"
+			],
+			[
+				"g",
+				"grid-cols-3"
+			],
+			[
+				"col",
+				"col-span-9"
+			],
+			[
+				"cls",
+				"className"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"border-top",
+				"border-top-right-radius"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"cole",
+				"collectionData"
+			],
+			[
+				"map",
+				"mapFile"
+			],
+			[
+				"curren",
+				"currentSlide"
+			],
+			[
+				"cur",
+				"currentData"
+			],
+			[
+				"filte",
+				"filterParams"
+			],
+			[
+				"sectio",
+				"sections"
+			],
+			[
+				"coll",
+				"collectionData"
+			],
+			[
+				"crea",
+				"creatorName"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"la",
+				"labLink"
+			],
+			[
+				"vig",
+				"vignette"
+			],
+			[
+				"cnt",
+				"contributors"
+			],
+			[
+				"base",
+				"base_url"
+			],
+			[
+				"sea",
+				"searchParams"
+			],
+			[
+				"sear",
+				"searchParams"
+			],
+			[
+				"rand",
+				"randomLines"
+			],
+			[
+				"cou",
+				"countries"
+			],
+			[
+				"sour",
+				"sourceTags"
+			],
+			[
+				"im",
+				"imgBase"
+			],
+			[
+				"s",
+				"srcs"
+			],
+			[
+				"laye",
+				"layerProps"
+			],
+			[
+				"ma",
+				"mapFile"
+			],
+			[
+				"tag",
+				"tagStyleShade"
+			],
+			[
+				"file",
+				"filterParams"
+			],
+			[
+				"top",
+				"top5tags"
+			],
+			[
+				"setT",
+				"setTopTags"
+			],
+			[
+				"me",
+				"meta"
+			],
+			[
+				"platfo",
+				"platformPads"
+			],
+			[
+				"setL",
+				"setLocationsCount"
+			],
+			[
+				"vigne",
+				"vignette"
+			],
+			[
+				"platform",
+				"platformData"
+			],
+			[
+				"ref",
+				"RefObject"
+			],
+			[
+				"cre",
+				"currentSlide"
+			],
+			[
+				"cure",
+				"currentSlide"
+			],
+			[
+				"curre",
+				"currentSlide"
+			],
+			[
+				"filt",
+				"filters"
+			],
+			[
+				"them",
+				"thematic_areas"
+			],
+			[
+				"the",
+				"thematic_areas"
+			],
+			[
+				"inc",
+				"include_engagment"
+			],
+			[
+				"inclu",
+				"include_locations"
+			],
+			[
+				"incld",
+				"include_engagment"
+			],
+			[
+				"ca",
+				"className"
+			],
+			[
+				"platf",
+				"platforms"
+			],
+			[
+				"sho",
+				"shortkey"
+			],
+			[
+				"doct",
+				"docType"
+			],
+			[
+				"tot",
+				"totalPages"
+			],
+			[
+				"sae",
+				"searchParams"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"fil",
+				"fields"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"ta",
+				"tagStyle"
+			],
+			[
+				"jus",
+				"justify-between"
+			],
+			[
+				"item",
+				"items-between"
+			],
+			[
+				"useS",
+				"useSearchParams"
+			],
+			[
+				"setPa",
+				"setPage"
+			],
+			[
+				"han",
+				"handleTabsUpdate"
+			],
+			[
+				"filter",
+				"filterParams"
+			],
+			[
+				"border-",
+				"border-bottom"
+			],
+			[
+				"fi",
+				"FilterGroup"
+			],
+			[
+				"use",
+				"useEffect"
+			],
+			[
+				"set",
+				"setFilterVisibility"
+			],
+			[
+				"setP",
+				"setParams"
+			],
+			[
+				"pola",
+				"platformData"
+			],
+			[
+				"bl",
+				"inline-block"
+			],
+			[
+				"page",
+				"pagelist"
+			],
+			[
+				"tota",
+				"totalPages"
+			],
+			[
+				"fet",
+				"fetchStats"
+			],
+			[
+				"anima",
+				"animation-fill-mode"
+			],
+			[
+				"trans",
+				"transform-origin"
+			],
+			[
+				"grid-",
+				"grid-cols-9"
+			],
+			[
+				"grid-temp",
+				"grid-template-columns"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"cl",
+				"className"
+			],
+			[
+				"box-",
+				"box-sizing"
+			],
+			[
+				"pare",
+				"parentNode"
+			],
+			[
+				"chi",
+				"children"
+			],
+			[
+				"cons",
+				"constructor"
+			],
+			[
+				"W",
+				"WebSocket"
+			],
+			[
+				"conne",
+				"connectToSocket"
+			],
+			[
+				"chil",
+				"children"
+			],
+			[
+				"upda",
+				"updateGroup"
+			],
+			[
+				"sl",
+				"sql2"
+			],
+			[
+				"note",
+				"noteId"
+			],
+			[
+				"remo",
+				"removeNote"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "process/_02_interpret_prompt.py",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"ts",
+				"Set Syntax: TSX"
+			],
+			[
+				"tsx",
+				"Set Syntax: TSX"
+			],
+			[
+				"type",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/myjyby/Documents/Projects/Action_plans/static/skills/index.html",
+		"/Users/myjyby/Documents/Solution mapping/African solutions/visualization/index.html",
+		"/Users/myjyby/Documents/Solution mapping/African solutions/visualization/css/main.css",
+		"/Users/myjyby/Documents/Solution mapping/African solutions/visualization/js/load.mjs",
+		"/Users/myjyby/Documents/Solution mapping/African solutions/visualization/js/svg.mjs",
+		"/Users/myjyby/Documents/Solution mapping/African solutions/visualization/js/radar.mjs",
+		"/Users/myjyby/Documents/Solution mapping/African solutions/prompts_2025_02_04.py",
+		"/Users/myjyby/Documents/Solution mapping/African solutions/addLocations.py",
+		"/Users/myjyby/Documents/Solution mapping/African solutions/compileJSON.py",
+		"/Users/myjyby/Documents/Solution mapping/African solutions/prompts.py",
+		"/Users/myjyby/Documents/Solution mapping/African solutions/loop.sh",
+		"/Users/myjyby/Documents/Solution mapping/African solutions/classification.py",
+		"/Users/myjyby/Documents/Solution mapping/African solutions/.gitignore",
+		"/Users/myjyby/Documents/Solution mapping/African solutions/prompts_2025-02-04.py",
+		"/Users/myjyby/Documents/Projects/Codification fest/Transcripts/notebooks/get_keywords.ipynb",
+		"/Users/myjyby/Documents/Projects/Action_plans/static/js/Math.extensions.js",
+		"/Users/myjyby/Documents/Projects/Scrapers/Information_integrity/loop.sh",
+		"/Users/myjyby/Documents/Solution mapping/African solutions/promts.py",
+		"/Users/myjyby/Documents/Projects/Scrapers/Information_integrity/thewebconf_2024.py",
+		"/Users/myjyby/Documents/Projects/Scrapers/Information_integrity/synthesis.py",
+		"/Users/myjyby/Documents/Projects/Scrapers/Information_integrity/acmdl_2024.py",
+		"/Users/myjyby/Documents/Projects/Teams/scraper/v03.py",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/boards/Hero/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/test/[platform]/Filters/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/search/[platform]/Hero/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/components/Card/featured-card.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/components/Card/without-img.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/components/Navbar/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/data/meta-data.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/data/platform-api.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/data/blogs-api.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/data/nlp-api.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/global.css",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/collection/Hero/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/learn/[slug]/Content/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/test/[platform]/Content/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/search/[platform]/Content/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/utils.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/see/Content/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/next-practices/Content/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/Featured-board/mobile.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/Featured-board/desktop.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/next-practices/Hero/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/search/[platform]/page.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/boards/page.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/about/Content/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/data/board/meta.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/board/Content/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/data/board/cards.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/boards/Content/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/components/Navbar/navlink.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/collection/Content/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/components/Card/collection-card.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/About/mobile.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/Hero/mobile.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/Hero/desktop.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/learn/[slug]/Hero/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/test/[platform]/Hero/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/see/Hero/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/learn/[slug]/page.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/board/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/test/[platform]/page.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/see/page.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/session.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/components/BoardsButton/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/about/Hero/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/About/Content/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/About/page.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/Test/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/Learn/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/data/collection/tempData/circular-economy.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/data/collection/tempData/digital-financial-inclusion.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/data/collection/tempData/food-systems.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/components/Footer/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/components/Footer/mobile.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/components/Footer/desktop.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/Featured-board/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/data/collection/index.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/data/collection/cards.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/data/board/index.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/data/board/main.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/pad/Hero/skeleton.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/components/Contact/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/components/Card/with-img.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/components/Navbar/desktop.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/components/Pagination/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/components/Navbar/mobile.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/next-practices/page.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/See/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/.env.local",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/pad/Hero/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/pad/Content/skeleton.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/pad/Content/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/How-it-works/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/Get-Inspired/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/BlockBtns/button.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/collection/Infobar/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/board/Infobar/skeleton.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/board/Infobar/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/board/Hero/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/board/Hero/skeleton.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/board/Content/skeleton.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/search/[slug]/Hero/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/search/[slug]/Content/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/board/Search/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/Hero/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/About/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/About/desktop.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/learn/[slug]/Filters/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/see/Filters/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/pad/Cartouche/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/Featured-board/tablet.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/components/Footer/tablet.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/BlockBtns/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/About/tablet.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/Hero/tablet.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/tailwind.config.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/data/get.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/data/boards/meta.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/components/MediaComponents/list.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/data/world-map.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/see/filters/index.tsx",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/ui/home/Featured-board/dep.index.tsxdep",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/db/general.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/next.config.mjs",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/db/blogs.ts",
+		"/Users/myjyby/Documents/Projects/sdg-innovation-commons/app/lib/definitions.ts"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 110.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "process/_02_interpret_prompt.py",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 42.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 293.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
