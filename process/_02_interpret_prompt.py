@@ -12,7 +12,8 @@ generates a python list of search queries related to the prompt.
 """
 
 from sys import argv
-from ollama import chat
+# from ollama import chat
+from ollama_client import ollama_client
 import json
 
 def compile_SYS_PROMT (n_queries=3):
@@ -43,7 +44,7 @@ def interpret_prompt (**kwargs):
 	if prompt is None:
 		raise Exception('missing prompt')
 
-	stream: ChatResponse = chat(
+	stream: ChatResponse = ollama_client.chat(
 		model=model, 
 		options={
 			'seed': 42,

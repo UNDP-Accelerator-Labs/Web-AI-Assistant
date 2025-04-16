@@ -6,7 +6,8 @@ It takes a conversation input, and can be passed any Ollama operable model.
 """
 
 import ollama
-from ollama import chat
+# from ollama import chat
+from ollama_client import ollama_client
 
 from colorama import Fore # this is to colorize the terminal output
 
@@ -18,7 +19,7 @@ def assistant_response (**kwargs):
 	if conversation is None:
 		raise Exception('missing conversation')
 
-	stream: ChatResponse = chat(
+	stream: ChatResponse = ollama_client.chat(
 		model=model, 
 		options= {
 			'seed': 42,

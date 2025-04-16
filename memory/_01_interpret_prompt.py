@@ -1,4 +1,5 @@
-from ollama import chat
+# from ollama import chat
+from ollama_client import ollama_client
 from sys import argv
 import json
 
@@ -31,7 +32,7 @@ def interpret_prompt(**kwargs):
 	if prompt is None:
 		raise Exception('missing prompt')
 
-	stream: ChatResponse = chat(
+	stream: ChatResponse = ollama_client.chat(
 		model=model, 
 		options={
 			'seed': 42,

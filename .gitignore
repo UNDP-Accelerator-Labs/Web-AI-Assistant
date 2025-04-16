@@ -3,3 +3,10 @@ dep.*
 __pycache__/
 .env/
 outputs/
+deep_search.sublme-workspace
+
+# Searxng documents
+searxng-docker.service
+caddy
+srv
+searxng/uwsgi.ini

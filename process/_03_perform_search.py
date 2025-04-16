@@ -37,12 +37,14 @@ import urllib.parse as parse
 import json
 import re
 import inquirer
+import os
 
 from colorama import Fore # this is to colorize the terminal output
 
 def perform_search (**kwargs):
 	host = kwargs.get('host', 'localhost')
 	port = kwargs.get('port', '8080')
+	searxng_url = os.getenv('SEARXNG_URL', 'http://localhost:8080')  # Default to localhost if not set
 	search = kwargs.get('search')
 	stream_output = kwargs.get('stream_output', False)
 	invalid_sources = kwargs.get('invalid_sources', [])
@@ -59,7 +61,7 @@ def perform_search (**kwargs):
 	safe_search = parse.quote_plus(search)
 
 	# &categories=science
-	with req.urlopen(f'http://{host}:{port}/search?q={safe_search}&format=json') as response:
+	with req.urlopen(f'{searxng_url}/search?q={safe_search}&format=json') as response:
 
 		parsed_response = json.loads(response.read())
 		
@@ -111,7 +113,7 @@ def main ():
 		print ('missing search')
 	else:
 		search = argv[1]
-		results, invalid_sources = perform_search(host='localhost', port='8080', search=search)
+		results, invalid_sources = perform_search(host='searxng', port='8080', search=search)
 		pprint.pprint(results)
 
 if __name__ == '__main__':

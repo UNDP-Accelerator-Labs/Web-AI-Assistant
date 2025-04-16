@@ -11,7 +11,8 @@ often require futher search—even in seemingly unnecessary cases).
 """
 
 from sys import argv
-from ollama import chat
+# from ollama import chat
+from ollama_client import ollama_client
 
 def compile_SYS_PROMT ():
 	return f"""
@@ -48,7 +49,7 @@ def require_search (**kwargs):
 	if prompt is None:
 		raise Exception('missing prompt')
 
-	stream: ChatResponse = chat(
+	stream: ChatResponse = ollama_client.chat(
 		model=model, 
 		options={
 			'seed': 42,

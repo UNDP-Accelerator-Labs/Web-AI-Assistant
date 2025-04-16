@@ -1,5 +1,6 @@
 import pprint
-from ollama import chat
+# from ollama import chat
+from ollama_client import ollama_client
 
 def compile_SYS_PROMT():
 	return """
@@ -33,7 +34,7 @@ def determine_relevance(**kwargs):
 	if document is None:
 		raise Exception('missing document')
 
-	stream: ChatResponse = chat(
+	stream: ChatResponse = ollama_client.chat(
 		model=model, 
 		options={
 			'seed': 42,

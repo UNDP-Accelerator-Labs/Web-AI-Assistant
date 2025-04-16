@@ -18,7 +18,8 @@ above) as inputs, and can be passed any Ollama operable model.
 """
 
 import pprint
-from ollama import chat
+# from ollama import chat
+from ollama_client import ollama_client
 import json
 
 def compile_SYS_PROMT():
@@ -45,7 +46,7 @@ def summarize_search_result(**kwargs):
 	if json_input is None:
 		raise Exception('missing json input')
 
-	stream: ChatResponse = chat(
+	stream: ChatResponse = ollama_client.chat(
 		model=model, 
 		options={
 			'seed': 42,
