@@ -5,8 +5,8 @@ that the user will interact with.
 It takes a conversation input, and can be passed any Ollama operable model.
 """
 
-import ollama
 from ollama import chat
+from ollama import ChatResponse
 
 from colorama import Fore # this is to colorize the terminal output
 
@@ -39,5 +39,6 @@ def assistant_response (**kwargs):
 		print('\n')
 	else:
 		full_response = stream['message']['content']
+
 
 	return full_response

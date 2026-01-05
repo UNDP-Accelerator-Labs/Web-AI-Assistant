@@ -1,14 +1,19 @@
 from tqdm import tqdm # this is for the loader
 from colorama import Fore # this is to colorize the terminal output
+from sys import argv
 
-from process import *
+from websearch import *
 from memory import *
 from preferences import *
+from documents import *
 
-COUNTRY = 'France'
+import examples
 
 def main ():
-	MODEL = 'llama3.2'
+	# MODEL = 'llama3.2:3b-instruct-q4_1'
+	MODEL = 'llama3.1:8b'
+	# MODEL = 'phi3:mini'
+	# MODEL = 'mistral'
 	STREAM = False
 
 	# GET PREFERENCES
@@ -20,30 +25,39 @@ def main ():
 	DB_NAME = 'conversations'
 	DB = get_vector_db(DB_NAME)
 
+	sys_arg = 'neutral'
+	if len(argv) == 2:
+		arg = argv[1]
+		# Check if the conversation should be altered
+		if arg.lower() == 'unbiased':
+			sys_arg = 'unbiased'
+		elif arg.lower() == 'falsified':
+			sys_arg = 'falsified'
+		elif arg.lower() == 'compare':
+			sys_arg = 'compare'
+	
 	# Initialize the conversation
+	technique, system_prompt = examples.prebunking
+
 	conversation = [
 		{ 
 			'role': 'system',
-			'content': f"""
-				You are an AI assistant that responds to a USER PROMPT.
-				The user is located in {COUNTRY}. You must respond in a 
-				contextually aware and appropriate manner.
-
-				You have several AI agents and workers working for you to retrieve 
-				relevant and up-to-date information from search enginge queries 
-				using engines like Google Search. 
-				These SEARCH RESULTS are passed to you as a python list of strings.
-				
-				You must use the SEARCH RESULTS as context to produce 
-				a high quality response to the USER PROMPT. 
-				Your response must be intelligible and useful to a human reader.
-			"""
-		}
+			'content': get_system_prompt(sys_arg),
+		},
+		# {
+		# 	'role': 'system',
+		# 	'content': system_prompt,
+		# }
 	]
 
+
 	while True:
+		print(Fore.WHITE + f'Using technique: {technique["title"]}')
 		print(Fore.WHITE + 'USER:')
 		prompt = input()
+		# Check if there are any urls in the prompt
+		# If there are urls, replace them with the content of the target page
+		prompt = detect_and_replace_urls(prompt)
 
 		if prompt.lower() == 'bye':
 			close_connection(conn=conn)
@@ -55,32 +69,19 @@ def main ():
 			response_to_memorize = conversation[-1]['content'].strip()
 			print(response_to_memorize)
 			populate_vector_db(DB, { 'prompt': prompt_to_memorize, 'response': response_to_memorize })
-		else: 
-			summaries, list_of_invalid_sources = run_web_search(
+		elif prompt.lower()[:7] == '/search':
+			conversation = run_web_search(
 				prompt, 
 				conversation, 
 				n_queries=3, 
 				model=MODEL, 
 				stream_output=STREAM, 
-				invalid_sources=PREFERENCES['invalid_sources']
+				conn=conn
 			)
-			if summaries and len(summaries) > 0:
-				conversation.append({
-					'role': 'user', 
-					'content': f"""
-						SEARCH RESULTS: {summaries}
-						USER PROMPT: {prompt}
-					"""
-				})
-			else:
-				conversation.append({ 'role': 'user', 'content': prompt })
-
+		else:
+			conversation.append({ 'role': 'user', 'content': prompt })
 			response = assistant_response(conversation=conversation, model=MODEL, stream_output=True)
-			# Add the response to the conversation thread
 			conversation.append({ 'role': 'assistant', 'content': response })
-			# Store the invalidated_sources
-			invalid_sources.add(list_of_invalid_sources, conn=conn)
-
 
 if __name__ == '__main__':
 	main()

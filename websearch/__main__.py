@@ -13,25 +13,30 @@ import json, re
 from tqdm import tqdm # this is for the loader
 from colorama import Fore # this is to colorize the terminal output
 
-# Search modules
-syspath.append(join(dirname(__file__), './'))
-from _00_assistant_response import assistant_response
-from _01_require_search import require_search
-from _02_interpret_prompt import interpret_prompt
-from _03_perform_search import perform_search
-from _04_summarize_search_results import summarize_search_result
-# from _05_refine_response import refine_response
+# Search steps (as modules)
+from .steps import *
+
+syspath.append(join(dirname(__file__), '..'))
+from preferences import connect_to_db, invalid_sources as stored_invalid_sources
 
 def run_web_search (prompt, conversation, **kwargs):
 	QUERIES = kwargs.get('n_queries', 3)
 	STREAM = kwargs.get('stream_output', False)
 	MODEL = kwargs.get('model', 'llama3.2')
-	INVALID_SOURES = kwargs.get('invalid_sources', [])
+	CONN = kwargs.get('conn', connect_to_db())
+	
+	# Get previously sotred invalid sources
+	INVALID_SOURES = stored_invalid_sources.get(conn=CONN)
+	
 	# Check if additional web search is needed
-	search_needed = require_search(prompt=prompt, conversation=conversation, model=MODEL, stream_output=STREAM)
+	# search_needed = require_search(prompt=prompt, conversation=conversation, model=MODEL, stream_output=STREAM)
+	search_needed = 'true'
+
+	all_search_results = []
+	next_prompts = []
 
 	if search_needed == 'true':
-		print(Fore.YELLOW + "A set of AI agents and workers will work to retrieve online information in order to improve you AI Assistant's response.")
+		print(Fore.YELLOW + "A set of AI agents and workers will work to retrieve online information in order to improve your AI Assistant's response.")
 		print(Fore.RED + 'Would you like to see how they reason? y/n')
 		show_reasoning = input(Fore.WHITE)
 		if show_reasoning.strip().lower() == 'y':
@@ -40,14 +45,13 @@ def run_web_search (prompt, conversation, **kwargs):
 			STREAM = False
 
 		# Interpret the prompt as a set of queries
-		queries = interpret_prompt(prompt=prompt, conversation=conversation, n_queries=QUERIES, stream_output=STREAM)
+		queries = interpret_prompt(prompt=prompt, conversation=conversation, n_queries=QUERIES, model=MODEL, stream_output=STREAM)
 
 		# For each generated keyword, perform a search
 		summaries = []
-		all_search_results = []
 		for q in tqdm(queries, desc=Fore.YELLOW + 'iterating over online searches'):
 			search_results, invalid_sources = perform_search(search=q, stream_output=STREAM, invalid_sources=INVALID_SOURES)
-			all_search_results.append(search_results)
+			all_search_results += search_results
 			# Update the invalid sources
 			INVALID_SOURES = invalid_sources
 			# Generate a summary of the top level in formation of the search results
@@ -56,12 +60,53 @@ def run_web_search (prompt, conversation, **kwargs):
 		
 		# Reset stream output
 		STREAM = False
-		# Return list of summaries and all invalidated sources
-		return (summaries, INVALID_SOURES)
+		# Suggest follow up prompts
+		next_prompts = infer_next_prompts(prompt=prompt, json_input=[r['content'] for r in all_search_results], model=MODEL, stream_output=STREAM)
+		
+		if summaries is not None and len(summaries) > 0:
+			conversation.append({
+				'role': 'user', 
+				'content': f"""
+					SEARCH RESULTS: {summaries}
+					USING THE SEARCH RESULTS, RESPOND AS BEST YOU CAN TO THE USER PROMPT: {prompt}
+				"""
+			})
+		else:
+			conversation.append({ 'role': 'user', 'content': prompt })
 	else:
 		# Reset stream output
 		STREAM = False
-		return (None, INVALID_SOURES)
+		conversation.append({ 'role': 'user', 'content': prompt })
+
+	response = assistant_response(conversation=conversation, model=MODEL, stream_output=False)
+	# Integrate references to the response
+	if len(all_search_results) > 0:
+		output = integrate_sources(
+			input_json=all_search_results, 
+			full_response=response, 
+			conservativeness=1.5, 
+			limit=2
+		)
+	else:
+		output = response
+	
+	# Print the output, simulating a stream
+	print(Fore.CYAN + 'ASSISTANT:')
+	chunk = 0
+	while chunk < len(output):
+		print(output[chunk:chunk+3], sep=' ', end='')
+		chunk += 3
+
+	# Add the response to the conversation thread
+	conversation.append({ 'role': 'assistant', 'content': response })
+	# Store the invalidated_sources
+	stored_invalid_sources.add(INVALID_SOURES, conn=CONN)
+	# Show the suggested follow up prompts
+	if len(next_prompts) > 0:
+		print(Fore.MAGENTA + '[AGENT] SUGGESTED NEXT PROMPTS:')
+		print('\n'.join(next_prompts))
+
+	return conversation
 
 def main ():
 	MODEL = 'llama3.2'

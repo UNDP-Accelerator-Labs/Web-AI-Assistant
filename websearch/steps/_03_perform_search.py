@@ -46,6 +46,7 @@ def perform_search (**kwargs):
 	search = kwargs.get('search')
 	stream_output = kwargs.get('stream_output', False)
 	invalid_sources = kwargs.get('invalid_sources', [])
+	limit = kwargs.get('limit', 15)
 	
 	if host is None:
 		raise Exception('missing host')
@@ -59,12 +60,15 @@ def perform_search (**kwargs):
 	safe_search = parse.quote_plus(search)
 
 	# &categories=science
-	with req.urlopen(f'http://{host}:{port}/search?q={safe_search}&format=json') as response:
+	# &categories=news
+	with req.urlopen(f'http://{host}:{port}/search?q={safe_search}&format=json&categories=news') as response:
 
 		parsed_response = json.loads(response.read())
 		
 		# answers = parsed_response['answers']
 		results = parsed_response['results']
+		if limit is not None:
+			results = results[:limit]
 
 		if stream_output == True:
 			# Check if there are any sources the user would like to exclude

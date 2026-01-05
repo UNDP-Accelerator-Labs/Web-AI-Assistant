@@ -1,0 +1,20 @@
+{
+	"title": "Cherry picking",
+	"source": "https://prebunking.withgoogle.com/",
+	"description": "Presenting a selection of evidence to support a claim, while ignoring or omitting evidence that contradicts it.",
+	"alt": [
+		"Selection bias",
+		"Fallacy of incomplete evidence"
+	],
+	"examples": [
+		"“Keeping a live tiger in your apartment is a great way to stop mice.”\nA salesperson who only talks about the features of a product that are most likely to appeal to a specific customer and ignores the features that might not be as appealing.",
+		"“Hot air balloons prove gravity is not real.”\nA scientist who only publishes the results of their research that support their hypothesis and ignores the results that don't."
+	],
+	"explanation": "Straightforward, simple arguments are compelling, and can be persuasive when compared to a more complex reality that full data would reveal. Even individuals who are well informed can be persuaded by an argument that relies on partial data — but sometimes the most important data is what’s not shared.",
+	"actions": [
+		"Try to get a holistic picture of the issue before believing or sharing a single data point.",
+		"Be on the lookout for vague statements preceding data. Using words like “many” or “a large amount” could mean that the data isn’t being presented accurately. Look to get the details of studies behind the data to make sure you aren’t just hearing snippets of information.",
+		"Search for the details of studies and data analysis before sharing.",
+		"Compare how different sources report the data."
+	]
+}

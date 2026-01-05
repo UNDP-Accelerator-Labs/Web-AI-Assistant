@@ -1,0 +1,15 @@
+{
+	"title": "Slipery Slope",
+	"source": "https://prebunking.withgoogle.com/",
+	"description": "Asserting that a first step taken will inevitably lead to major, often disastrous, consequences.",
+	"alt": [],
+	"examples": [
+		"If we implement even a modest change in policy, we’ll lose all of our freedoms.",
+		"If you don’t pass tomorrow’s math test, then you can’t take calculus next year. If you don’t take calculus, you won’t get into college!"
+	],
+	"explanation": "Slippery slope arguments take advantage of the gray area between initial actions and their conclusions. They often rely on fear of grave – and unavoidable – consequences of any step taken and can bypass more critical evaluations of the arguments they present.",
+	"actions": [
+		"Consider the emotional aspect of the argument. If the predicted consequences are portrayed as dire or frightening, it's possible someone may be trying to manipulate you.",
+		"Evaluate the likelihood that consequences would inevitably follow from a first step. Consider the other events that would have to take place and whether or not other outcomes might be possible."
+	]
+}

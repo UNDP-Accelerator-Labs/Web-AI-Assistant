@@ -1,0 +1,18 @@
+{
+	"title": "Decontextualization",
+	"source": "https://prebunking.withgoogle.com/",
+	"description": "Intentionally showing text, audio, or visuals in a different context or removing important background information in order to change its meaning.",
+	"alt": [
+		"Misrepresentation",
+		"Taking out of context"
+	],
+	"examples": [
+		"A photo of damage from a natural disaster posted with a misleading comment asserting the damage was caused by a recent protest.",
+		"Selectively edited audio or video of an individual that makes their comments appear to have a different meaning."
+	],
+	"explanation": "Removing context from a piece of content can lead to people being misinformed and forming their opinions based on misleading information.\nIt preys on the tendency of people to trust their eyes and ears, which often overrides the impulse to confirm or fact check with other sources.",
+	"actions": [
+		"Be skeptical of arguments that rely on a highly inflammatory image or quote and always double check the source sharing the information:  is it reputable and/or trustworthy?",
+		"Review content shared online carefully to determine if the commentary surrounding it is accurate by seeing  if others are sharing or refuting the information and/or searching for the original source of the image/video/story. Reverse Image Search is a great tool to find the origin point for images."
+	]
+}

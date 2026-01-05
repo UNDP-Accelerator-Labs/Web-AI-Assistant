@@ -21,12 +21,12 @@ def compile_SYS_PROMT (n_queries=3):
 	You are an AI web search query generator that returns a list of simple search queries 
 	that will then be used to search for content online using an engine like Google Search.
 	
-	You are given a USER_PROMPT and a CONVERSATION for context. 
+	You are given a USER PROMPT and a CONVERSATION for context. 
 	The CONVERSATION is provided as a json array of objets.
-	From the USER_PROMPT and the CONVERSATION, you infer {n_queries} associated search queries 
+	From the USER PROMPT and the CONVERSATION, you infer {n_queries} associated search queries 
 	that you return as a Python list of strings with no syntax errors.
 
-	It the USER_PROMPT or CONVERSATION contain important entities like dates and locations, 
+	If the USER PROMPT or CONVERSATION contain important entities like dates and locations, 
 	include these in all search queries. Aim for diversity of search queries.
 
 	You retrun the Python list of search queries and nothing else. 
@@ -60,7 +60,7 @@ def interpret_prompt (**kwargs):
 				'role': 'user',
 				'content': """
 					CONVERSATION: []
-					CREATE A JSON INTERPRETABLE LIST OF SEARCH QUERIES FROM THIS PROMPT: What are the most recent black metal releases?
+					CREATE A JSON INTERPRETABLE LIST OF SEARCH QUERIES FROM THIS USER PROMPT: What are the most recent black metal releases?
 				"""
 			},
 			{
@@ -71,7 +71,7 @@ def interpret_prompt (**kwargs):
 				'role': 'user',
 				'content': """
 					CONVERSATION: []
-					CREATE A JSON INTERPRETABLE LIST OF SEARCH QUERIES FROM THIS PROMPT: I am a business owner looking to expand in Colombia. What do I need to know?
+					CREATE A JSON INTERPRETABLE LIST OF SEARCH QUERIES FROM THIS USER PROMPT: I am a business owner looking to expand in Colombia. What do I need to know?
 				"""
 			},
 			{
@@ -82,7 +82,7 @@ def interpret_prompt (**kwargs):
 				'role': 'user',
 				'content': """
 					CONVERSATION: [{ 'role': 'user', 'content': 'My name is Bob' }, { 'role': 'assistant', 'content': 'Hello Bob! It's nice to meet you. Is there something I can help you with, or would you like to chat for a bit?' }]
-					CREATE A JSON INTERPRETABLE LIST OF SEARCH QUERIES FROM THIS PROMPT: Can you tell me about some celebrities who share my first name?
+					CREATE A JSON INTERPRETABLE LIST OF SEARCH QUERIES FROM THIS USER PROMPT: Can you tell me about some celebrities who share my first name?
 				"""
 			},
 			{
@@ -94,7 +94,7 @@ def interpret_prompt (**kwargs):
 				'role': 'user',
 				'content': f"""
 					CONVERSATION: {conversation}
-					CREATE A JSON INTERPRETABLE LIST OF SEARCH QUERIES FROM THIS PROMPT: {prompt}
+					CREATE A JSON INTERPRETABLE LIST OF SEARCH QUERIES FROM THIS USER PROMPT: {prompt}
 				"""
 			},
 		],

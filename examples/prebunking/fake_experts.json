@@ -1,0 +1,19 @@
+{
+	"title": "Fake experts",
+	"source": "https://prebunking.withgoogle.com/",
+	"description": "Individuals who speak in a way that conveys the impression of expertise on a topic while possessing little to no relevant expertise. They are often deployed to elicit support for miracle cures, unproven arguments, or to cast doubt on established expert consensus and may leverage entirely fabricated institutions that sound legitimate to add to their guise of credibility.",
+	"alt": [
+		"False, alleged, or irrelevant authority"
+	],
+	"examples": [
+		"An influencer wearing a white doctor’s coat giving advice about brain cancer.",
+		"Nutrition advice from a fitness influencer who lost 50 pounds.",
+		"A philosopher who asserts claims about climate change and emphasizes their doctorate degree, but has not studied climate science."
+	],
+	"explanation": "Our minds devise shortcuts to help manage vast amounts of information that we process every minute. An ingrained trust in experts is a mental shortcut — instead of having to deal with complicated cognitive decisions to deduce our perspective Our minds devise shortcuts to help manage vast amounts of information that we process every minute. An ingrained trust in experts is a mental shortcut — instead of having to deal with complicated cognitive decisions to deduce our perspective on a subject we know little about.\nBut expert credentials can be misleading, especially when an expert’s exact background is not clear. Very often audiences fail to verify an expert’s background, and take people at their word.",
+	"actions": [
+		"Be on the lookout for experts who appeal to their own authority while contradicting the consensus of others in the field (e.g.: “Trust me, I’m a doctor”)",
+		"Investigate an expert’s background and expertise. Have they studied the specific subject they are commenting on? Have they released peer reviewed research?",
+		"Evaluate the institution they work for, including its sources of funding."
+	]
+}

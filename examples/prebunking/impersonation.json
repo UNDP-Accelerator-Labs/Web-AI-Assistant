@@ -1,0 +1,16 @@
+{
+	"title": "Impersonation",
+	"source": "https://prebunking.withgoogle.com/",
+	"description": "Deceiving an audience by assuming another person’s online persona. This can be done to harm the person’s reputation, inflict emotional harm, or to spread manipulation from a particular source.",
+	"alt": [
+		"Spoofing"
+	],
+	"examples": [
+		"Impersonation attacks include, but are not limited to, setting up fake social media accounts associated with a target, accessing a target’s online accounts to send messages, and spoofing the sender email address or phone number of a target to make it appear as if the target authored the message."
+	],
+	"explanation": "Impersonating someone else can provide a range of gains to a malicious actor, from financial gains to reputational damage.",
+	"actions": [
+		"Strong digital security practices are a key first step to avoid being a target of impersonation. Two-factor authentication for account logins, strong password hygiene, and wariness of phishing or other social-engineering attacks can help prevent accounts from being compromised and allowing in impersonators.",
+		"To avoid being manipulated by an impersonation (ie: where someone is pretending to be someone else) it is important to cross-check the source. Look to see if their current behavior matches their past behavior. Significant deviation can be a sign the account is an impersonation."
+	]
+}

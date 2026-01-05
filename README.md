@@ -1,4 +1,8 @@
-# UNDP Web Enabled RAG Assistant
+# UNDP Web Enabled AI Assistant
+
+This repository contains a local, open source, privacy preserving, copyright respectful, interactive and transparent web search enabled AI assistant.
+
+It often happens that the rollout of AI assistants in organizations conflicts with existing data and technology governance principles. This project aims to align principles we have come across with a light-weight AI assistant interface that runs in a terminal.
 
 ## Setting things up
 This code base is written in Python3. Make sure to have Python3.13 or above installed on your machine.

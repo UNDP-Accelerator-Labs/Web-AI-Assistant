@@ -3,3 +3,4 @@ dep.*
 __pycache__/
 .env/
 outputs/
+*.sublime-workspace

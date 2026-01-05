@@ -1,0 +1,18 @@
+{
+	"title": "Red Herring",
+	"source": "https://prebunking.withgoogle.com/",
+	"description": "Diverting attention from a real issue by focusing on a topic with only a surface relevance to the original.",
+	"alt": [
+		"Misdirection",
+		"Diversion"
+	],
+	"examples": [
+		"Jack: “Bob Dylan was the greatest songwriter.”\nJill: “No, Fleetwood Mac had the greatest live performers of all time”",
+		"Why are you upset? Think of all the starving children around the world who have it worse than you."
+	],
+	"explanation": "When subtlety isn’t an option, a red herring may be employed to confuse the audience. By pivoting to an entirely unrelated, outrageous, and highly charged topic, a speaker can make the audience forget the original discussion.\nSome red herrings will subtly switch contexts, retaining superficial similarity between the new and original topic to minimize people’s ability to detect a context switch.",
+	"actions": [
+		"Be skeptical when someone responds to a controversial question by calling attention to another charged or polarized topic without actually answering the original question.",
+		"Ask yourself: Does this answer the question? Red herrings are meant to distract from the original topic; it could be worth re-asking the question."
+	]
+}
